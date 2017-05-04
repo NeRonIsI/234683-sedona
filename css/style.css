@@ -1,23 +1,130 @@
 body{
+    min-width: 1280px;
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     line-height: 26px;
     color: #333333;
     font-weight: normal;
-    font-family: "PT SAns", sans-serif
+    font-family: "PT SAns", sans-serif;
     text-transform: uppercase;
 }
 
+/*header*/
+.main-navigation{
+    width: 1200px;
+}
+
+.main-menu{
+    width: 1200px;
+    list-style: none;
+    padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-menu li{
+    width: 240px;
+	padding: 17px 0;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+/*основное содержание*/
+.main-content{
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+/*фон и слоганы*/
+.main-poster{
+    min-height: 515px;
+    background-image: url("../img/fon.jpg");
+    background-position: 0 -55px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 55px;
+    padding-top: 55px;
+    border: 0;
+    
+}
+ 
+/*описание*/
+.main-description{
+    text-align: center;
+    width: 500px;
+    min-height: 125px;
+	margin: auto;
+	padding: 45px;
+}
+
+}
 .main-tagline{
     font-size: 21px;
     color: #000000;
-    font-weight: bold;        
+    font-weight: bold;
+   
+}
+
+/*описание№1*/
+.description-block-first{
+    background-color: #81b3d2;
+    display: flex;
+    min-height: 260px;
+    align-items: center;
+    
+    
+    
+}
+.description-image{
+    max-height: 259px;
+}
+.description-block{
+    text-align: center;
+    width: 400px;
+}
+
+.second-advantage{
+    display: flex;
+}
+
+.first-advantage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 185px;
+    align-items: center;
+}
+
+.item-image{
+    align-self: flex-start;
+}
+
+.item-tatle{
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.item-text{
+    font-size: 14px;
+    line-height: 21px;
+    align-self: flex-end;
 }
 
 .search-heading{
     font-size: 30px;
-    line-height: 24;
+    line-height: 24px;
     color: #000000;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .headline{
