@@ -184,7 +184,7 @@ body{
 .hotel-search{
     text-align: center;
     width: 500px;
-    min-height: 125px;
+    min-height: 205px;
 	margin: auto;
 	padding: 45px;
 }
@@ -198,11 +198,8 @@ body{
     text-transform: uppercase;
 }
 
-.headline{
-    
-}
-.reason{
-    font-size: 1em;
+.booking{
+    height: 560px;
 }
 /*footer*/
 .main-footer{
