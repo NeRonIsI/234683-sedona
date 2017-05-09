@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>каталог отелей</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <div class="container">
         <header class="main-header">
-            <a class="logo"><img src="../img/logo.png" alt="logo"></a>
+            <a class="main-logo"><img src="../img/logo.png" alt="logo"></a>
             <nav class="main-navigation">
-                <ul class="menu">
+                <ul class="main-menu">
                     <li><a class="link" href="#">Информация</a></li>
                     <li><a class="link" href="#">Фото и Видео</a></li>
                     <li><a class="link" href="#">Карта Штата</a></li>
@@ -22,9 +22,9 @@
         </header>
         <main class="content">
             <div class="search-options">
-                <form action="https://echo.htmlacademy.ru" method="get">
+                <form class="checkmenu" action="https://echo.htmlacademy.ru" method="get">
                     <fieldset class="form-checkbox-facilities">
-                        <legend>Ифраструктура</legend>
+                        <legend>Ифраструктура:</legend>
                         <section>
                             <input type="checkbox" name="facilities" value="Бассейн" id="pool">
                             <label for="pool">Бассейн</label>
@@ -39,7 +39,7 @@
                         </section>
                     </fieldset>
                     <fieldset class="form-checkbox" name="lodging">
-                        <legend>Тип жилья</legend>
+                        <legend>Тип жилья:</legend>
                         <section>
                             <input type="checkbox" name="lodging" value="Гостиница" id="hotel">
                             <label for="hotel">Гостиница</label>
@@ -54,9 +54,26 @@
                         </section>
                     </fieldset>
                 </form>
+                <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
             </div>
             <section class="sorting-bar">
-                <p>Найдено: 3</p>
+               
+                <span>Найдено: 3</span>
+                
                 <section class="type-sorting">
                     <a href="#" class="sorting">По цене</a>
                     <a href="#" class="sorting">По типу</a>
@@ -70,13 +87,11 @@
                 </section>
             </section>
             <div class="catalog">
-                <ul class="hotels-list">
-                    <li class="hotel-item">
-                        <section class="hotel-description">
+                    <article class="hotel-item">
                             <section class="hotel-image">
-                                <img src="#" alt="Amara resort & spa" width="" height="">
+                                <img src="../img/amara.jpg" alt="Amara resort & spa" width="" height="">
                             </section>
-                            <section class="about-hotel">
+                            
                                 <section class="hotel-info">
                                     <h2 class="hotel-name">Amara resort & spa</h2>
                                     <span class="hotel-type-cost">Гостиница от 4000 Р.</span>
@@ -87,15 +102,13 @@
                                     <img src="#" alt="Рейтинг" width="" height="">
                                     <span class="score">рейтинг:8,5 </span>
                                 </section>
-                            </section>
-                        </section>
-                    </li>
-                    <li class="hotel-item">
-                        <section class="hotel-description">
+                            
+                    </article>
+                    <article class="hotel-item">
                             <section class="hotel-image">
-                                <img src="#" alt="desert quail inn" width="" height="">
+                                <img src="../img/quail.jpg" alt="desert quail inn" width="" height="">
                             </section>
-                            <section class="about-hotel">
+                            
                                 <section class="hotel-info">
                                     <h2 class="hotel-name">desert quail inn</h2>
                                     <span class="hotel-type-cost">Гостиница от 3000 Р.</span>
@@ -106,15 +119,13 @@
                                     <img src="#" alt="Рейтинг" width="" height="">
                                     <span class="score">рейтинг:8,9 </span>
                                 </section>
-                            </section>
-                        </section>
-                    </li>
-                    <li class="hotel-item">
-                        <section class="hotel-description">
+                            
+                    </article>
+                    <article class="hotel-item">
                             <section class="hotel-image">
-                                <img src="#" alt="villas at poco diablo" width="" height="">
+                                <img src="../img/poco.jpg" alt="villas at poco diablo" width="" height="">
                             </section>
-                            <section class="about-hotel">
+                            
                                 <section class="hotel-info">
                                     <h2 class="hotel-name">villas at poco diablo</h2>
                                     <span class="hotel-type-cost">Гостиница от 2000 Р.</span>
@@ -125,28 +136,28 @@
                                     <img src="#" alt="Рейтинг" width="" height="">
                                     <span class="score">рейтинг:9,2</span>
                                 </section>
-                            </section>
-                        </section>
-                    </li>
-                </ul>
+                            
+                    </article>
             </div>
         </main>
-        <footer class="main-footer">
-            <section class="">
+        <footer class="footer main-footer">
+           
+            <section class="footer hastag">
                 <span>#visitsedona</span>
             </section>
-            <section class="social">
+            <section class="footer social">
                 <a class="social-twitter" href="#">Twitter</a>
                 <a class="social-facebook" href="#">Facebook</a>
                 <a class="social-youtube" href="#">Youtube</a>
             </section>
-            <section class="develop-link">
+            <section class="footer develop-link">
                 <span>Website by</span>
                 <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
                     <img src="" alt="htmlacademy.ru" width="" height="">
                 </a>
             </section>
-        </footer>
+            
+        </footer>    
     </div>
 </body>
 
