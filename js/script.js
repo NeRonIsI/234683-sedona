@@ -4,7 +4,7 @@ var html = document.documentElement;
 
 html.className = html.className.replace("no-js", "js");
 
-popup.classList.add("hotel-book-window-close");
+//popup.classList.add("hotel-book-window-close");
 
 link.addEventListener("click", function(event) {
     event.preventDefault();
