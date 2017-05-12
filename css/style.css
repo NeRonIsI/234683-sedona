@@ -557,7 +557,7 @@ input[type="number"] {
 /*footer*/
 .main-footer {
     width: 1083px;
-    height: 46px;
+    height: 40px;
     display: flex;
     padding-top: 40px;
     padding-bottom: 35px;
@@ -570,11 +570,11 @@ input[type="number"] {
     margin-right: 240px;
     font-size: 21px;
     font-weight: bold;
-    padding-top: 6px
+    padding-top: -2px
 }
 
 .social {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     width: 155px;
     height: 50px;
 }
@@ -606,7 +606,7 @@ input[type="number"] {
 .social-btn::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 35%;
     transform: translate(-50%, -50%);
     background-image: url("../img/sprites.png");
@@ -679,8 +679,8 @@ input[type="number"] {
 .develop::before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 48%;
     transform: translate(-50%, -50%);
     background-image: url("../img/sprites.png");
     background-repeat: no-repeat;
@@ -709,9 +709,10 @@ input[type="number"] {
 /*check*/
 .search-options {
     width: 1056px;
+    height: 158px;
     background-image: url("../img/filterbackground.jpg");
     background-position: 0 -75px;
-    padding: 31px 72px;
+    padding: 28px 71px;
     font-size: 0;
     line-height: 0;
     color: #ffffff;
@@ -729,7 +730,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]+label {
     display: block;
-    margin: 10px 0;
+    margin: 25px 0;
     line-height: 20px;
     padding-left: 45px;
     position: relative;
@@ -763,13 +764,15 @@ input[type="checkbox"]:checked+label::after {
 .form-checkbox-facilities,
 .form-checkbox {
     border: none;
-    margin-right: 95px;
+    margin-right: 125px;
+    padding-top: 1px 
 }
 
 legend {
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
+    
 }
 
 label {
@@ -879,7 +882,7 @@ label {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 5px 30px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -900,9 +903,10 @@ label {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 75px;
+    padding-left: 71px;
     padding-right: 75px;
     height: 86px;
+    padding-top: 
 }
 
 .sorting-bar-info section {
@@ -984,7 +988,7 @@ label {
 .hotel-item {
     display: flex;
     justify-content: space-between;
-    min-height: 155px;
+    height: 155px;
     border-bottom: 1px solid #e5e5e5;
     padding-left: 75px;
     padding-right: 75px;
@@ -998,11 +1002,11 @@ label {
 .hotel-block img,
 .hotel-block .hotel-text {
     display: inline-block;
-    vertical-align: top
+    vertical-align: top;
 }
 
 .hotel-text {
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
 .hotel-name {
