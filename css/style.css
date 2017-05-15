@@ -588,7 +588,7 @@ input[type="number"] {
     vertical-align: middle;
 }
 
-.sign {
+.common[type="button"] {
     font-size: 21px;
     line-height: 26px;
     color: #a9a9a9;
@@ -596,13 +596,13 @@ input[type="number"] {
     text-decoration: none;
 }
 
-.sign:hover {
+.common[type="button"]:hover {
     outline: none;
     color: #000000;
     text-decoration: none;
 }
 
-.sign:active {
+.common[type="button"]:active {
     outline: none;
     color: #81b3d2;
     text-decoration: none;
